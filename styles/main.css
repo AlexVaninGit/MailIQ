@@ -1,0 +1,396 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.marginb-32{
+    margin-bottom: 32px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oranienbaum', serif !important;
+}
+
+header{
+    height: 100vh;
+    background-image: url('../images/bg-main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 3;
+    padding-top: 230px;
+}
+
+.nav__social-link{
+    display: inline-block;
+    width: 30px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    padding: .5rem;
+}
+
+.nav__social-link--inst{
+    background-image: url('../images/inst.png');
+}
+.nav__social-link--facebook{
+    background-image: url('../images/facebook.png');
+}
+.nav__social-link--vk{
+    background-image: url('../images/vk.png');
+}
+
+
+.nav__social-link:hover{
+    background-position: 0 -24px;
+
+}
+
+.nav__social{
+    display: flex;
+    margin-right: 60px;
+}
+
+.header__menu-link{
+    color: #fff !important;
+    text-transform: uppercase;
+}
+
+.nav__numbers-link{
+    color: #fff;
+}
+
+.nav__numbers{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.header__offer-title{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.header__offer-title span{
+    color: rgb(168, 136, 77);
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+
+.new{
+    overflow: hidden;
+    position: relative;
+}
+
+.new--red{
+    width: 362px;
+    /* height: 50px; */
+    padding: 8px 0;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+    transform: rotate(-41deg);
+    background-color: red;
+    z-index: 1;
+    position: absolute;
+    top: 83px;
+    left: -83px;
+}
+
+
+.new__description{
+    margin-top: 100px;
+}
+
+.new__description{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.new__description-title{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.new__img{
+    width: 100%;
+    height: 900px;
+}
+.img__link{
+    color: #aaa;
+}
+
+
+
+.happens{
+    margin-top: 100px;
+}
+
+
+.happens__title{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.heppens__item{
+    color: #828282;
+    margin-bottom: 40px;
+}
+.heppens__item--text{
+    width: 700px;
+    margin: 40px auto;
+}
+
+.table__img{
+    width: 30px;
+    height: 30px;
+}
+
+.valut__img{
+    width: 34px;
+    height: 34px;
+    padding: 5px;
+    border: 2px solid #000;
+}
+
+table, tr ,td, th{
+    border: 2px solid rgb(255, 217, 0) !important;
+    font-weight: 700;
+}
+
+.table{
+    background-color: rgb(243, 234, 108);
+}
+
+th{
+    text-transform: uppercase;
+}
+.table__text{
+    width: 181px;
+
+}
+.table__text span{
+    font-weight: 300;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.table__text--bold{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.table__btn{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background .3s ease-in-out;
+    margin-top: 40px;
+}
+
+.table__btn:hover{
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+
+.services{
+    margin-bottom: 100px;
+}
+.services__title{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.services__item{
+    border: 2px solid #828282;
+    width: 300px;
+    padding: 50px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: box-shadow .3s ease-in;
+}
+
+.services__item:hover{
+    box-shadow: 4px 2px 39px -9px rgba(0, 0, 0, 0.39);
+
+}
+
+.services__pac, .services__title{
+    font-weight: 700;
+    font-size: 20px;
+}
+.services__title{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.services__text{
+    font-weight: 700;
+}
+
+.services__text--light{
+    margin-bottom: 0 !important; 
+    font-weight: 400;
+    color: #828282;
+}
+
+.is-sale{
+    position: relative;
+    width: 70px;
+    margin: 0 auto;
+    color: #828282;
+    font-size: 18px !important;
+    font-weight: 300 !important;
+}
+.is-sale::before{
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    transform: translateY(-50%);
+    transform: rotate(-12deg);
+}
+
+.services__price{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+
+.algorithm__item{
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.algorithm__img{
+    height: 350px;
+}
+
+.algorithm__img:hover{
+    transform: scale(1.2);
+}
+
+
+
+.algorithm__item-text{
+    color: #828282;
+}
+
+.algorithm__title{
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+
+.footer{
+    margin-top: 100px;
+    background-color: #000;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer__link-top{
+    color: #fff;
+    padding: 20px;
+    border: 2px solid #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.footer__link-top:hover{
+    background-color: rgb(75, 75, 75);
+    color: #fff;
+}
+
+.footer__link{
+    color: #fff;
+}
+
+.footer__link:hover{
+    color: rgb(170, 169, 169);
+}
+
+
+@media (max-width: 1100px){
+    .new__img{
+        height: 660px;
+    }
+}
+
+@media (max-width: 1100px){
+    .heppens__item--text{
+        width: 430px;
+    }
+}
+
+@media (max-width: 990px){
+    .algorithm__img{
+        height: 700px;
+    }
+}
+
+
+@media (max-width: 720px){
+    .new--red{
+        width: 295px;
+        top: 43px;
+    }
+
+    .new__description-text{
+        font-size: 14px;
+    }
+    .new__description-title{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 650px){
+    .services__item {
+        width: 262px;
+        padding: 24px;
+    }
+}
+
+@media (max-width: 500px){
+    .new__img{
+        height: 313px;
+    }
+    .new--red{
+        width: 248px;
+        top: 21px;
+    }
+    .heppens__item--text{
+        width: 250px;
+    }
+}
+
+
+
+
