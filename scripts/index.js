@@ -5,7 +5,8 @@ $(window).on('scroll', () => {
 })
 
 $('.navbar-toggler').on('click', () => {
-    $('nav').toggleClass('bg-dark')
+    !$('nav').hasClass('bg-dark') && $('nav').toggleClass('bg-dark')
+
 })
 
 $('.footer__link-top').on('click', (e) => {
